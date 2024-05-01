@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Young+Serif&display=swap");
+
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  background: var(--Light-Grey);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  transform: scale(0.9);
+}
+
+.card {
+  background: var(--White);
+  padding: 26px;
+  border-radius: 17px;
+}
+
+.card h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.card h1 {
+  color: var(--Dark-Charcoal);
+  margin-bottom: 18px;
+}
+
+.card p {
+  line-height: 1.4;
+  color: var(--Wenge-Brown);
+}
+
+.card .time {
+  background: var(--Rose-White);
+  padding: 18px;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
+.time p {
+  color: var(--Dark-Raspberry);
+  font-weight: 800;
+}
+
+.time ul,
+.ingre ul {
+  margin-left: 14px;
+}
+
+.time li {
+  color: var(--Dark-Raspberry);
+  margin: 8px;
+}
+
+.time span,
+.ingre span {
+  color: var(--Wenge-Brown);
+  margin-left: 10px;
+}
+
+.card .ingre {
+  color: var(--Nutmeg);
+  margin-bottom: 22px;
+}
+
+.ingre h2 {
+  margin-bottom: 15px;
+}
+
+.ingre li {
+  margin: 8px;
+}
+
+hr {
+  margin-bottom: 24px;
+  border-top: 1px solid var(--Light-Grey);
+}
+
+.card .inst {
+  margin-bottom: 20px;
+}
+
+.card .inst h2 {
+  color: var(--Nutmeg);
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6px;
+}
+
+.item p {
+  margin-top: 6px;
+  font-weight: bold;
+  color: var(--Nutmeg);
+}
+
+.item span {
+  margin: 4px;
+  line-height: 1.5;
+}
+
+.inst span {
+  margin-left: 10px;
+  color: var(--Wenge-Brown);
+}
+
+.card .nut h2 {
+  color: var(--Nutmeg);
+  margin-bottom: 15px;
+}
+
+.nut p {
+  color: var(--Wenge-Brown);
+  margin-bottom: 10px;
+}
+
+.nut table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nut table tr {
+  border-bottom: 1pt solid var(--Light-Grey);
+}
+
+.nut table tr td {
+  padding: 8px;
+}
+
+.nut table tr span {
+  color: var(--Wenge-Brown);
+  margin-left: 10px;
+}
+
+.nut table tr td b {
+  color: var(--Nutmeg);
+}
+
+.nut table .fat {
+  border: none;
+}
+
+@media (max-width: 400px) {
+  .container {
+    transform: scale(1);
+  }
+  .card {
+    border-radius: 0;
+    padding: 0;
+  }
+  .card img {
+    border-radius: 0;
+  }
+  .content {
+    padding: 20px;
+  }
+}
